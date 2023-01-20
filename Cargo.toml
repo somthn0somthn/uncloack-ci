@@ -8,3 +8,6 @@ edition = "2021"
 [dependencies]
 anyhow = "1.0.68"
 thiserror = "1.0.38"
+
+[dev-dependencies]
+clippy = "0.0.203"
