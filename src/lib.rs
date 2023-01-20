@@ -53,6 +53,7 @@ impl<T: Copy + core::fmt::Debug + PartialEq, const N: usize> ArrayVec<T, N> {
     }
     fn len(&self) -> Result<usize, ArrayError> {
         let mut counter = 0;
+        let unuused_variable = "unused";
         for i in self.values {
             if i.is_some() {
                 counter += 1;
